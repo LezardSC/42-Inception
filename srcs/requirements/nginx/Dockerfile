@@ -11,7 +11,7 @@ RUN mkdir -p /run/nginx
 RUN openssl req -x509 -nodes \
 		-out /etc/nginx/ssl/inception.crt \
 		-keyout /etc/nginx/ssl/inception.key \
-		-subj "/C=FR/ST=IDF/L=Paris/0=42/OU=42/CN=jrenault.42.fr/UID=jrenault"
+		-subj "/C=FR/ST=ARA/L=Lyon/0=42/OU=42/CN=jrenault.42.fr/UID=jrenault"
 
 COPY /conf/nginx.conf /etc/nginx/sites-available/default
 
